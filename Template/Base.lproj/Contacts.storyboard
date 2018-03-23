@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--ContactDashboardVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ContactDashboardVC" title="ContactDashboardVC" id="BYZ-38-t0r" customClass="ContactDashboardVC" customModule="aoneteam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iBt-rI-M9i">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3F-32-02t">
+                                        <rect key="frame" x="10" y="22" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="g3F-32-02t" secondAttribute="height" multiplier="1:1" id="0PN-B7-LAI"/>
+                                        </constraints>
+                                        <state key="normal" image="back_arrow_white_icon"/>
+                                        <connections>
+                                            <action selector="openTapBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uKV-qn-fjB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAM-Jk-JqN">
+                                        <rect key="frame" x="273" y="22" width="32" height="32"/>
+                                        <state key="normal" image="search_white_icon"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="540 Contacts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhT-mg-gxE">
+                                        <rect key="frame" x="47" y="38" width="160" height="20"/>
+                                        <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="13"/>
+                                        <color key="textColor" red="0.50980392159999999" green="0.60784313729999995" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contacts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fz7-bK-nuZ">
+                                        <rect key="frame" x="47" y="20" width="160" height="20"/>
+                                        <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.022722648456692696" green="0.21481829881668091" blue="0.58667868375778198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="GhT-mg-gxE" firstAttribute="width" secondItem="Fz7-bK-nuZ" secondAttribute="width" id="1xl-FK-ZdX"/>
+                                    <constraint firstItem="Fz7-bK-nuZ" firstAttribute="leading" secondItem="iBt-rI-M9i" secondAttribute="trailing" multiplier="47:320" id="5bx-Li-4yQ"/>
+                                    <constraint firstItem="Fz7-bK-nuZ" firstAttribute="top" secondItem="iBt-rI-M9i" secondAttribute="bottom" multiplier="20:64" id="5gg-4c-Tqa"/>
+                                    <constraint firstItem="g3F-32-02t" firstAttribute="top" secondItem="iBt-rI-M9i" secondAttribute="bottom" multiplier="22:64" id="9wA-qL-wiP"/>
+                                    <constraint firstItem="GhT-mg-gxE" firstAttribute="centerX" secondItem="Fz7-bK-nuZ" secondAttribute="centerX" id="K4J-7T-qdD"/>
+                                    <constraint firstItem="GhT-mg-gxE" firstAttribute="height" secondItem="Fz7-bK-nuZ" secondAttribute="height" id="T3A-wm-mi8"/>
+                                    <constraint firstItem="Fz7-bK-nuZ" firstAttribute="height" secondItem="iBt-rI-M9i" secondAttribute="height" multiplier="20:64" id="Vow-vS-Pht"/>
+                                    <constraint firstItem="g3F-32-02t" firstAttribute="leading" secondItem="iBt-rI-M9i" secondAttribute="trailing" multiplier="10:320" id="Wpu-EJ-irw"/>
+                                    <constraint firstItem="bAM-Jk-JqN" firstAttribute="width" secondItem="g3F-32-02t" secondAttribute="width" id="XYl-7E-VEK"/>
+                                    <constraint firstItem="bAM-Jk-JqN" firstAttribute="leading" secondItem="iBt-rI-M9i" secondAttribute="trailing" multiplier="273:320" id="Z1p-d9-Y7Q"/>
+                                    <constraint firstItem="bAM-Jk-JqN" firstAttribute="height" secondItem="g3F-32-02t" secondAttribute="height" id="cAZ-Vg-yGG"/>
+                                    <constraint firstItem="g3F-32-02t" firstAttribute="width" secondItem="iBt-rI-M9i" secondAttribute="width" multiplier="32:320" id="fRv-bZ-n4E"/>
+                                    <constraint firstItem="bAM-Jk-JqN" firstAttribute="centerY" secondItem="g3F-32-02t" secondAttribute="centerY" id="pM2-nF-hme"/>
+                                    <constraint firstItem="GhT-mg-gxE" firstAttribute="top" secondItem="iBt-rI-M9i" secondAttribute="bottom" multiplier="38:64" id="pxF-Cz-qVE"/>
+                                    <constraint firstItem="Fz7-bK-nuZ" firstAttribute="width" secondItem="iBt-rI-M9i" secondAttribute="width" multiplier="160:320" id="xL3-Jg-yby"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wK0-pd-c4a" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="64" width="320" height="40"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VL5-DP-o7i">
+                                    <size key="itemSize" width="40" height="40"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="mor-W5-PGC"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="XFw-4Q-yWE"/>
+                                </connections>
+                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5cA-n0-2DO">
+                                <rect key="frame" x="0.0" y="104" width="320" height="464"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="PIR-4f-Z8L"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94614773988723755" green="0.96251660585403442" blue="0.99809807538986206" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iBt-rI-M9i" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="64:568" id="2gw-lS-Nsy"/>
+                            <constraint firstItem="5cA-n0-2DO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8Kp-78-iWp"/>
+                            <constraint firstItem="iBt-rI-M9i" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Gs3-32-h3B"/>
+                            <constraint firstItem="5cA-n0-2DO" firstAttribute="top" secondItem="wK0-pd-c4a" secondAttribute="bottom" id="Nvv-Pt-ax7"/>
+                            <constraint firstAttribute="bottom" secondItem="5cA-n0-2DO" secondAttribute="bottom" id="Qqo-cs-the"/>
+                            <constraint firstItem="wK0-pd-c4a" firstAttribute="top" secondItem="iBt-rI-M9i" secondAttribute="bottom" id="U0m-gc-YMQ"/>
+                            <constraint firstItem="5cA-n0-2DO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XxF-Df-tVc"/>
+                            <constraint firstItem="wK0-pd-c4a" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="40:568" id="iqV-XX-Npx"/>
+                            <constraint firstItem="wK0-pd-c4a" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lR1-7V-bfb"/>
+                            <constraint firstItem="iBt-rI-M9i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mm8-os-7nn"/>
+                            <constraint firstItem="wK0-pd-c4a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nbs-Ep-TyO"/>
+                            <constraint firstItem="iBt-rI-M9i" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pg9-ec-jJX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="Chat_Big_Icon_Blue" id="3wk-HW-uqt"/>
+                    <connections>
+                        <outlet property="buttonBarView" destination="wK0-pd-c4a" id="Ykm-8j-Q2K"/>
+                        <outlet property="containerView" destination="5cA-n0-2DO" id="Z1m-Jm-VHq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-398" y="-1558"/>
+        </scene>
+        <!--AllContactVC-->
+        <scene sceneID="dBn-QF-5cc">
+            <objects>
+                <viewController storyboardIdentifier="AllContactVC" title="AllContactVC" id="WB5-2S-9sU" customClass="AllContactVC" customModule="aoneteam" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MZG-Zf-WQm"/>
+                        <viewControllerLayoutGuide type="bottom" id="5H4-Hp-Ful"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F9c-ij-Jf9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94614773988723755" green="0.96251660585403442" blue="0.99809807538986206" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="L00-Dg-egf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Onv-Eg-VNN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1365" y="-3897.8873239436621"/>
+        </scene>
+        <!--ContactContactsVC-->
+        <scene sceneID="Fwl-Tf-Yaf">
+            <objects>
+                <viewController storyboardIdentifier="ContactContactsVC" title="ContactContactsVC" id="I0z-MA-Rdf" customClass="ContactContactsVC" customModule="aoneteam" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Nb-yc-17a"/>
+                        <viewControllerLayoutGuide type="bottom" id="spv-o6-vgQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dzJ-Zb-zGI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="S2b-NC-Yea"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="csa-Qe-oq1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1043" y="-3213"/>
+        </scene>
+        <!--MemberContactsVC-->
+        <scene sceneID="IPn-VH-iIL">
+            <objects>
+                <viewController storyboardIdentifier="MemberContactsVC" title="MemberContactsVC" id="Qp7-ir-P2P" customClass="MemberContactsVC" customModule="aoneteam" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NsF-Oe-0hZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="JPR-xv-AtX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TZC-cX-kr9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Tn5-gm-g9i" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="c7a-4Z-sgE">
+                                    <size key="itemSize" width="40" height="40"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="kBb-iv-dVk"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="udF-c1-tX4"/>
+                                </connections>
+                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggh-34-ha3">
+                                <rect key="frame" x="0.0" y="40" width="320" height="528"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="dCR-Vf-ZL5"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ggh-34-ha3" firstAttribute="top" secondItem="Tn5-gm-g9i" secondAttribute="bottom" id="9hw-ls-lZY"/>
+                            <constraint firstItem="ggh-34-ha3" firstAttribute="trailing" secondItem="9Ns-RO-jgI" secondAttribute="trailing" id="LOA-gr-ONo"/>
+                            <constraint firstItem="ggh-34-ha3" firstAttribute="leading" secondItem="9Ns-RO-jgI" secondAttribute="leading" id="Wxg-EF-QwJ"/>
+                            <constraint firstItem="Tn5-gm-g9i" firstAttribute="top" secondItem="TZC-cX-kr9" secondAttribute="top" id="X2k-za-OOS"/>
+                            <constraint firstItem="Tn5-gm-g9i" firstAttribute="height" secondItem="TZC-cX-kr9" secondAttribute="height" multiplier="40:568" id="bHL-Hx-GaT"/>
+                            <constraint firstItem="Tn5-gm-g9i" firstAttribute="trailing" secondItem="9Ns-RO-jgI" secondAttribute="trailing" id="qty-Xh-l4w"/>
+                            <constraint firstItem="Tn5-gm-g9i" firstAttribute="leading" secondItem="9Ns-RO-jgI" secondAttribute="leading" id="r3V-US-smJ"/>
+                            <constraint firstAttribute="bottom" secondItem="ggh-34-ha3" secondAttribute="bottom" id="wXG-v9-cWS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9Ns-RO-jgI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gxa-f2-ne1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="620.625" y="-4582.3943661971834"/>
+        </scene>
+        <!--GroupContactsVC-->
+        <scene sceneID="aa5-ua-9bE">
+            <objects>
+                <viewController storyboardIdentifier="GroupContactsVC" title="GroupContactsVC" id="WNA-TM-UvV" customClass="GroupContactsVC" customModule="aoneteam" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZZ8-X0-8Bn"/>
+                        <viewControllerLayoutGuide type="bottom" id="RR9-zG-viz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aL8-Yz-UQT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IA8-nw-OVR" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9Rf-8T-60m">
+                                    <size key="itemSize" width="40" height="40"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="vB0-RZ-uas"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="VuF-sM-CS4"/>
+                                </connections>
+                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jup-wL-XQb">
+                                <rect key="frame" x="0.0" y="40" width="320" height="528"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Q7R-oS-mPr"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IA8-nw-OVR" firstAttribute="top" secondItem="aL8-Yz-UQT" secondAttribute="top" id="2nD-OD-qPB"/>
+                            <constraint firstItem="jup-wL-XQb" firstAttribute="top" secondItem="IA8-nw-OVR" secondAttribute="bottom" id="5rI-s1-5qs"/>
+                            <constraint firstAttribute="bottom" secondItem="jup-wL-XQb" secondAttribute="bottom" id="BG7-jQ-8Ao"/>
+                            <constraint firstItem="IA8-nw-OVR" firstAttribute="height" secondItem="aL8-Yz-UQT" secondAttribute="height" multiplier="40:568" id="DJj-qg-xIj"/>
+                            <constraint firstItem="jup-wL-XQb" firstAttribute="leading" secondItem="1rZ-9z-634" secondAttribute="leading" id="egP-V4-WXL"/>
+                            <constraint firstItem="jup-wL-XQb" firstAttribute="trailing" secondItem="1rZ-9z-634" secondAttribute="trailing" id="f4x-hl-g1G"/>
+                            <constraint firstItem="IA8-nw-OVR" firstAttribute="trailing" secondItem="1rZ-9z-634" secondAttribute="trailing" id="giG-Kc-sx3"/>
+                            <constraint firstItem="IA8-nw-OVR" firstAttribute="leading" secondItem="1rZ-9z-634" secondAttribute="leading" id="k26-DI-rs8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1rZ-9z-634"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qxi-tl-Ktd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39" y="-4664"/>
+        </scene>
+        <!--ListContactsVC-->
+        <scene sceneID="rZ4-Ig-0Sb">
+            <objects>
+                <viewController storyboardIdentifier="ListContactsVC" title="ListContactsVC" id="g0M-AV-3a4" customClass="ListContactsVC" customModule="aoneteam" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Roq-lX-0Jg"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Q4-1j-WmR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aKV-8a-ZO7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="KzA-BI-xzk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t6r-ab-vGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-305.625" y="-4800"/>
+        </scene>
+        <!--MemberAlumniVC-->
+        <scene sceneID="3pO-QM-RF8">
+            <objects>
+                <viewController storyboardIdentifier="MemberAlumniVC" title="MemberAlumniVC" id="x2o-xU-GAz" customClass="MemberAlumniVC" customModule="aoneteam" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hsf-i1-fkB"/>
+                        <viewControllerLayoutGuide type="bottom" id="LOR-Uj-5Wg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="izn-Sh-FYP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="FRX-we-t6X"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="puN-S3-tAQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-304" y="-4799"/>
+        </scene>
+        <!--MemberFriendsVC-->
+        <scene sceneID="Gov-ef-FQD">
+            <objects>
+                <viewController storyboardIdentifier="MemberFriendsVC" title="MemberFriendsVC" id="usJ-HP-d46" customClass="MemberFriendsVC" customModule="aoneteam" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vyn-7S-8Ad"/>
+                        <viewControllerLayoutGuide type="bottom" id="LQF-Xg-r0g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rcf-cf-nCj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="9Y1-PO-4NR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u2n-qD-fNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-304" y="-4799"/>
+        </scene>
+        <!--MemberFamilyVC-->
+        <scene sceneID="8rs-wN-Oka">
+            <objects>
+                <viewController storyboardIdentifier="MemberFamilyVC" title="MemberFamilyVC" id="M9W-ne-Wg3" customClass="MemberFamilyVC" customModule="aoneteam" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Eck-me-cyl"/>
+                        <viewControllerLayoutGuide type="bottom" id="1mr-Qa-Mev"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oo9-tB-dtc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="xes-WG-JnE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GgW-Zm-E48" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-304" y="-4799"/>
+        </scene>
+        <!--MemberNetworkVC-->
+        <scene sceneID="4mv-x4-xU0">
+            <objects>
+                <viewController storyboardIdentifier="MemberNetworkVC" title="MemberNetworkVC" id="vEJ-9p-TIG" customClass="MemberNetworkVC" customModule="aoneteam" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V1v-Mw-fMB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Omy-vl-pq8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="59V-T1-sMj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="TBb-tK-Dr0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yOZ-7X-vdL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-304" y="-4799"/>
+        </scene>
+        <!--AllMembersVC-->
+        <scene sceneID="xXn-fP-09W">
+            <objects>
+                <viewController storyboardIdentifier="AllMembersVC" title="AllMembersVC" id="V71-Jk-5pR" customClass="AllMembersVC" customModule="aoneteam" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s4B-gK-oSv"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xar-Eb-rY5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mcO-vD-a8n">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94614773990000001" green="0.96251660589999999" blue="0.99809807539999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="cBK-v0-623"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T8r-Yp-kJw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-304" y="-4799"/>
+        </scene>
+        <!--AllGroupVC-->
+        <scene sceneID="EXm-YM-tJR">
+            <objects>
+                <viewController storyboardIdentifier="AllGroupVC" title="AllGroupVC" id="ZEV-vj-iz8" customClass="AllGroupVC" customModule="aoneteam" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LRN-rj-ye7"/>
+                        <viewControllerLayoutGuide type="bottom" id="i3r-6W-W4x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uqc-Hc-3ai">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="6Gf-hS-RHS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BDM-xB-hV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-304" y="-4799"/>
+        </scene>
+        <!--GroupAlumniVC-->
+        <scene sceneID="YFR-Ks-4qn">
+            <objects>
+                <viewController storyboardIdentifier="GroupAlumniVC" title="GroupAlumniVC" id="NcJ-KA-LL2" customClass="GroupAlumniVC" customModule="aoneteam" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HBl-xt-NYj"/>
+                        <viewControllerLayoutGuide type="bottom" id="qsI-HI-9rI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="alC-hZ-TPD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="dss-9s-OXT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Arh-EZ-me9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-304" y="-4799"/>
+        </scene>
+        <!--GroupFamilyVC-->
+        <scene sceneID="ABS-If-Hhj">
+            <objects>
+                <viewController storyboardIdentifier="GroupFamilyVC" title="GroupFamilyVC" id="NkB-fN-wvd" customClass="GroupFamilyVC" customModule="aoneteam" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bcg-Gd-HNZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="XHK-4i-PUf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kjz-2C-yyO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="9zV-wD-c6W"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OJB-lB-G2i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-304" y="-4799"/>
+        </scene>
+        <!--GroupFriendsVC-->
+        <scene sceneID="hbc-Qu-gWt">
+            <objects>
+                <viewController storyboardIdentifier="GroupFriendsVC" title="GroupFriendsVC" id="g6J-Fe-7WI" customClass="GroupFriendsVC" customModule="aoneteam" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QX4-9O-pHt"/>
+                        <viewControllerLayoutGuide type="bottom" id="2H4-SO-gHk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9l1-gb-EFd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="6Y2-Xj-uKM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nWl-8C-92o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-304" y="-4799"/>
+        </scene>
+        <!--GroupNetworkVC-->
+        <scene sceneID="IV2-OI-mG1">
+            <objects>
+                <viewController storyboardIdentifier="GroupNetworkVC" title="GroupNetworkVC" id="PjC-nv-QJS" customClass="GroupNetworkVC" customModule="aoneteam" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="te3-OU-egw"/>
+                        <viewControllerLayoutGuide type="bottom" id="sGU-Is-rBz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O9s-7b-Om5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="qgl-z9-ya8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Egl-WB-Tna" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-304" y="-4799"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Chat_Big_Icon_Blue" width="30" height="25"/>
+        <image name="back_arrow_white_icon" width="25" height="25"/>
+        <image name="search_white_icon" width="24" height="17"/>
+    </resources>
+</document>
